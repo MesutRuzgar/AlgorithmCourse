@@ -15,16 +15,34 @@ namespace AlgorithmCourse
             //Example2();
             //Example3();
             //SwitchCaseExample();
+            //Example4();
 
+            Console.WriteLine("Bir sayı giriniz.");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+
+            int kalan = sayi % 2;
+
+            if (kalan!=0)
+            {
+                Console.WriteLine("Tek");
+            }
+            else
+            {
+                Console.WriteLine("Çift");
+            }
+           
+            Console.ReadLine();
+        }
+
+        private static void Example4()
+        {
             Console.WriteLine("Üçgenin 1. açısını giriniz.");
             int aci1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Üçgenin 2. açısını giriniz.");
             int aci2 = int.Parse(Console.ReadLine());
 
             int aci3 = 180 - (aci1 + aci2);
-            Console.WriteLine("Üçgenin 3. açısı: {0}",aci3);
-
-            Console.ReadLine();
+            Console.WriteLine("Üçgenin 3. açısı: {0}", aci3);
         }
 
         private static void SwitchCaseExample()
