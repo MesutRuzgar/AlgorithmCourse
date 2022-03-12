@@ -17,13 +17,45 @@ namespace AlgorithmCourse
             //SwitchCaseExample();
             //Example4();
             //Example5();
+            //Example6();
+
+            Console.WriteLine("Etiket fiyatını giriniz.");
+            double fiyat = Convert.ToDouble(Console.ReadLine());
+            double indirim = 0.18;
+            double yeniFiyat = fiyat - (fiyat * indirim);
+            Console.WriteLine("Etkiket fiyatı: {0}", fiyat);
+            Console.WriteLine("İndirim oranı:{0}", indirim);
+            Console.WriteLine("İndirimli fiyatı:{0}", yeniFiyat);
+
+            int sayi, yuzler, onlar, birler;
+            Console.WriteLine("Bir sayı giriniz.");
+            sayi = int.Parse(Console.ReadLine());
+            yuzler = sayi / 100;
+            sayi = sayi - (yuzler * 100);
+            onlar = sayi / 10;
+            sayi = sayi - (onlar * 10);
+            birler = sayi;
+
+
+            Console.WriteLine("Sayınızın yüzler basamağı:{0}",yuzler);
+            Console.WriteLine("Sayınızın onlar basamağı:{0}", onlar);
+            Console.WriteLine("Sayınızın birler basamağı:{0}", birler);
+
+
+
+
+            Console.ReadLine();
+        }
+
+        private static void Example6()
+        {
             int vize, final;
             Console.WriteLine("Vize notunuzu giriniz.");
             vize = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Final notunuzu giriniz");
             final = Convert.ToInt32(Console.ReadLine());
 
-            if (vize>=30 && final>=30)
+            if (vize >= 30 && final >= 30)
             {
                 Console.WriteLine("Geçti");
             }
@@ -31,12 +63,6 @@ namespace AlgorithmCourse
             {
                 Console.WriteLine("Kaldı");
             }
-
-
-
-
-
-            Console.ReadLine();
         }
 
         private static void Example5()
