@@ -13,15 +13,22 @@ namespace AlgorithmCourse
             //Intro();
             //Example1();
             //Example2();
+            Example3();
 
+            Console.ReadLine();
+        }
+
+        private static void Example3()
+        {
+            baslangic:
             Console.WriteLine("Haftanın kaçıncı günü?");
             int gun = Convert.ToInt32(Console.ReadLine());
 
-            if (gun==1)
+            if (gun == 1)
             {
                 Console.WriteLine("Pazartesi");
             }
-            else if (gun==2)
+            else if (gun == 2)
             {
                 Console.WriteLine("Salı");
             }
@@ -29,7 +36,7 @@ namespace AlgorithmCourse
             {
                 Console.WriteLine("Çarşamba");
             }
-            else if (gun ==4 )
+            else if (gun == 4)
             {
                 Console.WriteLine("Perşembe");
             }
@@ -41,12 +48,15 @@ namespace AlgorithmCourse
             {
                 Console.WriteLine("Cumartesi");
             }
-            else
+            else if (gun == 7)
             {
                 Console.WriteLine("Pazar");
             }
-
-            Console.ReadLine();
+            else
+            {
+                Console.WriteLine("Hatalı giriş!");
+                goto baslangic;
+            }
         }
 
         private static void Example2()
