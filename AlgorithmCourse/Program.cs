@@ -18,7 +18,40 @@ namespace AlgorithmCourse
             //Example4();
             //Example5();
             //Example6();
+            //Example7();
 
+            //pozitif tam bölenler
+            Console.WriteLine("Bir sayı giriniz.");
+            int sayi = int.Parse(Console.ReadLine());
+            int sayac = 0;
+            for (int i = 1; i <= sayi; i++)
+            {
+                if (sayi%i==0)
+                {
+                    Console.WriteLine(i);
+                    sayac++;
+                }               
+            }
+
+            //iki sayı arasındaki tek sayıları bulan kod
+            int sayi1, sayi2;
+            Console.WriteLine("iki adet sayı giriniz.");
+            sayi1 = int.Parse(Console.ReadLine());
+            sayi2 = int.Parse(Console.ReadLine());
+
+            for (int i = sayi1; i < sayi2; i++)
+            {
+                if (i%2!=0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            Console.ReadLine();
+        }
+
+        private static void Example7()
+        {
             Console.WriteLine("Etiket fiyatını giriniz.");
             double fiyat = Convert.ToDouble(Console.ReadLine());
             double indirim = 0.18;
@@ -37,14 +70,9 @@ namespace AlgorithmCourse
             birler = sayi;
 
 
-            Console.WriteLine("Sayınızın yüzler basamağı:{0}",yuzler);
+            Console.WriteLine("Sayınızın yüzler basamağı:{0}", yuzler);
             Console.WriteLine("Sayınızın onlar basamağı:{0}", onlar);
             Console.WriteLine("Sayınızın birler basamağı:{0}", birler);
-
-
-
-
-            Console.ReadLine();
         }
 
         private static void Example6()
