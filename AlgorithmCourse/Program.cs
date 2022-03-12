@@ -14,7 +14,21 @@ namespace AlgorithmCourse
             //Example1();
             //Example2();
             //Example3();
-           
+            //SwitchCaseExample();
+
+            Console.WriteLine("Üçgenin 1. açısını giriniz.");
+            int aci1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Üçgenin 2. açısını giriniz.");
+            int aci2 = int.Parse(Console.ReadLine());
+
+            int aci3 = 180 - (aci1 + aci2);
+            Console.WriteLine("Üçgenin 3. açısı: {0}",aci3);
+
+            Console.ReadLine();
+        }
+
+        private static void SwitchCaseExample()
+        {
             Console.WriteLine("Haftanın kaçıncı günü?");
             int gun = Convert.ToInt32(Console.ReadLine());
 
@@ -44,12 +58,9 @@ namespace AlgorithmCourse
 
                 default:
                     Console.WriteLine("Hatalı giriş!");
-                   
+
                     break;
             }
-
-
-            Console.ReadLine();
         }
 
         private static void Example3()
