@@ -16,13 +16,37 @@ namespace AlgorithmCourse
             //Example3();
             //SwitchCaseExample();
             //Example4();
+            //Example5();
+            int vize, final;
+            Console.WriteLine("Vize notunuzu giriniz.");
+            vize = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Final notunuzu giriniz");
+            final = Convert.ToInt32(Console.ReadLine());
 
+            if (vize>=30 && final>=30)
+            {
+                Console.WriteLine("Geçti");
+            }
+            else
+            {
+                Console.WriteLine("Kaldı");
+            }
+
+
+
+
+
+            Console.ReadLine();
+        }
+
+        private static void Example5()
+        {
             Console.WriteLine("Bir sayı giriniz.");
             int sayi = Convert.ToInt32(Console.ReadLine());
 
             int kalan = sayi % 2;
 
-            if (kalan!=0)
+            if (kalan != 0)
             {
                 Console.WriteLine("Tek");
             }
@@ -30,8 +54,6 @@ namespace AlgorithmCourse
             {
                 Console.WriteLine("Çift");
             }
-           
-            Console.ReadLine();
         }
 
         private static void Example4()
