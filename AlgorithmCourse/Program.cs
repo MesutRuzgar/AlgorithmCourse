@@ -12,15 +12,53 @@ namespace AlgorithmCourse
         {
             //Intro();
             //Example1();
+            //Example2();
 
+            Console.WriteLine("Haftanın kaçıncı günü?");
+            int gun = Convert.ToInt32(Console.ReadLine());
+
+            if (gun==1)
+            {
+                Console.WriteLine("Pazartesi");
+            }
+            else if (gun==2)
+            {
+                Console.WriteLine("Salı");
+            }
+            else if (gun == 3)
+            {
+                Console.WriteLine("Çarşamba");
+            }
+            else if (gun ==4 )
+            {
+                Console.WriteLine("Perşembe");
+            }
+            else if (gun == 5)
+            {
+                Console.WriteLine("Cuma");
+            }
+            else if (gun == 6)
+            {
+                Console.WriteLine("Cumartesi");
+            }
+            else
+            {
+                Console.WriteLine("Pazar");
+            }
+
+            Console.ReadLine();
+        }
+
+        private static void Example2()
+        {
             Console.WriteLine("Sayıyı giriniz.");
             int sayi1 = int.Parse(Console.ReadLine());
 
-            if (sayi1<0)
+            if (sayi1 < 0)
             {
                 Console.WriteLine("Sayınız negatiftir.");
             }
-            else if (sayi1>0)
+            else if (sayi1 > 0)
             {
                 Console.WriteLine("Sayınız pozitiftir.");
 
@@ -29,8 +67,6 @@ namespace AlgorithmCourse
             {
                 Console.WriteLine("Sayınız nötrdür.");
             }
-
-            Console.ReadLine();
         }
 
         private static void Example1()
